@@ -1,6 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root{
+     --backg-color: #0F0D13;
+     --card-color: #2A2141;
+     --font-color: #E1E1E6;
+     --secondary-color: #D9D9D9;
+
+     font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--backg-color);
+    height: 100vh;
+}
+
+#app{
+    display: grid;
+    place-content: center;
+    grid-template-areas: 
+    "A B"
+    "A C";
+    height: 80vh;
+
+    gap: 3.2rem;
+}
+
+
+.player1{
+    grid-area: A;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+
+    padding: 3.8rem;
+}
+
+.player2{
+    grid-area: B;
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+
+    padding: 2.8rem;
+}
+
+.player3{
+    background-color: lightgreen;
+    grid-area: C;
+    width: 150px;
+    height: 150px;
+
+    padding: 2.8rem;
+}
