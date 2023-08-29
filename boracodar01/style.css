@@ -21,41 +21,38 @@ body{
     height: 100vh;
 }
 
+#app *{
+    border: 1px solid red;
+}
+
 #app{
     display: grid;
     place-content: center;
+    grid-template-rows: [A] ;
     grid-template-areas: 
     "A B"
     "A C";
-    height: 80vh;
+    
 
     gap: 3.2rem;
 }
 
 
-.player1{
+#player1{
     grid-area: A;
-    background-color: white;
-    width: 150px;
-    height: 150px;
-
-    padding: 3.8rem;
+    padding: 5rem 3.8rem;
 }
 
-.player2{
+#player2{
     grid-area: B;
-    background-color: lightblue;
-    width: 150px;
-    height: 150px;
-
-    padding: 2.8rem;
+   
 }
 
-.player3{
-    background-color: lightgreen;
+#player3{
     grid-area: C;
-    width: 150px;
-    height: 150px;
+   
+}
 
-    padding: 2.8rem;
+.player{
+    background-color: var(--card-color);
 }
